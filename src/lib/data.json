@@ -1,0 +1,316 @@
+{
+    "24.1": [
+        {
+            "name": "Karim",
+            "level": "RX",
+            "score": "9'06"
+        },
+        {
+            "name": "Mathieu",
+            "level": "SC",
+            "score": "13'43"
+        },
+        {
+            "name": "Eva",
+            "level": "SC",
+            "score": "13'41"
+        },
+        {
+            "name": "Silvia",
+            "level": "RX",
+            "score": "13'43"
+        }, 
+        {
+            "name": "Sandra",
+            "level": "7.5",
+            "score": "12'23"
+        }, 
+        {
+            "name": "Marc",
+            "level": "12.5",
+            "score": "14'43"
+        }, 
+        {
+            "name": "Yannick",
+            "level": "12.5",
+            "score": "13'03"
+        }, 
+        {
+            "name": "Elodie",
+            "level": "7.5",
+            "score": "13'30"
+        }, 
+        {
+            "name": "Laure",
+            "level": "7.5",
+            "score": "11'54"
+        }, 
+        {
+            "name": "Solenne",
+            "level": "7.5",
+            "score": "14'47"
+        }, 
+        {
+            "name": "Thibault",
+            "level": "SC",
+            "score": "10'08"
+        }, 
+        {
+            "name": "Lorine",
+            "level": "SC",
+            "score": "12'23"
+        }, 
+        {
+            "name": "Alizee",
+            "level": "RX",
+            "score": "13'19"
+        }, 
+        {
+            "name": "Gaetan",
+            "level": "RX",
+            "score": "09'06"
+        }, 
+        {
+            "name": "Emilie",
+            "level": "RX",
+            "score": "08'24"
+        }, 
+        {
+            "name": "Valentin",
+            "level": "RX",
+            "score": "08'48"
+        }, 
+        {
+            "name": "Maelenn",
+            "level": "RX",
+            "score": "12'24"
+        }, 
+        {
+            "name": "Davy",
+            "level": "17.5",
+            "score": "10'26"
+        }, 
+        {
+            "name": "Delphine",
+            "level": "RX",
+            "score": "12'45"
+        }, 
+        {
+            "name": "Aline",
+            "level": "RX",
+            "score": "14'00"
+        }, 
+        {
+            "name": "Louise",
+            "level": "12.5",
+            "score": "11'16"
+        }, 
+        {
+            "name": "Lou",
+            "level": "SC",
+            "score": "12'30"
+        }, 
+        {
+            "name": "Victor",
+            "level": "SC",
+            "score": "09'15"
+        }, 
+        {
+            "name": "Teddy",
+            "level": "RX",
+            "score": "10'13"
+        }, 
+        {
+            "name": "Charlotte",
+            "level": "RX",
+            "score": "13'57"
+        }, 
+        {
+            "name": "Fabien",
+            "level": "SC",
+            "score": "11'08"
+        }, 
+
+        {
+            "name": "Yann",
+            "level": "RX",
+            "score": "14'43"
+        }, 
+        {
+            "name": "Baptiste",
+            "level": "RX",
+            "score": "09'35"
+        }, 
+        {
+            "name": "Guillaume F",
+            "level": "RX",
+            "score": "Reste 9 Burpees"
+        }, 
+        {
+            "name": "Guillaume S",
+            "level": "RX",
+            "score": "Reste 16 reps"
+        }, 
+        {
+            "name": "Celia",
+            "level": "RX",
+            "score": "09'24"
+        }, 
+        {
+            "name": "Jeremy",
+            "level": "RX",
+            "score": "08'51"
+        }, 
+        {
+            "name": "Max",
+            "level": "RX",
+            "score": "14'51"
+        }, 
+        {
+            "name": "Arthur",
+            "level": "SC",
+            "score": "12'55"
+        }
+    ],
+    "24.2": [
+        {
+            "name": "Virginie",
+            "level": "",
+            "score": "5 rounds"
+        },
+        {
+            "name": "Lou",
+            "level": "",
+            "score": "6 rounds + 250m"
+        },
+        {
+            "name": "Axel",
+            "level": "",
+            "score": "6 rounds + 240m"
+        },
+        {
+            "name": "Julien",
+            "level": "",
+            "score": "5 rounds + 296m"
+        },
+        {
+            "name": "Thibault",
+            "level": "",
+            "score": "8 rounds + 250m"
+        },
+        {
+            "name": "Laure",
+            "level": "",
+            "score": "6 rounds + 300m"
+        },
+        {
+            "name": "Sandra",
+            "level": "",
+            "score": "6 rounds + 200m"
+        },
+        {
+            "name": "Yannick",
+            "level": "",
+            "score": "7 rounds"
+        },
+        {
+            "name": "Solenne",
+            "level": "",
+            "score": "6 rounds + 160m"
+        },
+        {
+            "name": "Pamela",
+            "level": "",
+            "score": "6 rounds + 121m"
+        },
+        {
+            "name": "Romain",
+            "level": "",
+            "score": "6 rounds + 70m"
+        },
+        {
+            "name": "Elodie",
+            "level": "",
+            "score": "6 rounds + 300m"
+        },
+        {
+            "name": "Lorine",
+            "level": "",
+            "score": "6 rounds + 100m"
+        },
+        {
+            "name": "Jade",
+            "level": "",
+            "score": "7 rounds + 80m"
+        },
+        {
+            "name": "Marc",
+            "level": "",
+            "score": "6 rounds + 250m"
+        },
+        {
+            "name": "Norbert",
+            "level": "",
+            "score": "6 rounds + 300m"
+        },
+        {
+            "name": "Maelenn",
+            "level": "",
+            "score": "6 rounds + 213m"
+        },
+        {
+            "name": "Arthur",
+            "level": "",
+            "score": "4 rounds + 20DU"
+        },
+        {
+            "name": "Yann",
+            "level": "",
+            "score": "4 rounds + 183m"
+        },
+        {
+            "name": "Mathilde",
+            "level": "",
+            "score": "5 rounds + 12DU"
+        },
+        {
+            "name": "Louise",
+            "level": "",
+            "score": "5 rounds + 300m"
+        },
+        {
+            "name": "Aymeric",
+            "level": "",
+            "score": "6 rounds"
+        },
+        {
+            "name": "Delphine",
+            "level": "",
+            "score": "6 rounds + 150m"
+        },
+        {
+            "name": "Gaetan",
+            "level": "",
+            "score": "8 rounds + 40m"
+        },
+        {
+            "name": "Max",
+            "level": "",
+            "score": "4 rounds + 280m"
+        },
+        {
+            "name": "Teddy",
+            "level": "",
+            "score": "8 rounds + 12DU"
+        },
+        {
+            "name": "Valentin",
+            "level": "",
+            "score": "7 rounds + 1DU"
+        }
+
+
+
+
+    ]
+}
