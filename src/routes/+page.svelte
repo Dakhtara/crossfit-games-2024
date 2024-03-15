@@ -1,20 +1,20 @@
 <script>
-  import { browser } from '$app/environment';
+  import { browser } from "$app/environment";
+  import AutoScrollTable from "$lib/components/AutoScrollTable.svelte";
 
   export let data = [];
   let { firstWod } = data;
 
   // Refetch every minute
-    setInterval(() => {
-        if (browser) {
-            fetch('/api/records')
-            .then((res) => res.json())
-            .then((data) => {
-                firstWod = data.firstWod;
-            });
-            
-        }
-    }, 60000);
+  setInterval(() => {
+    if (browser) {
+      fetch("/api/records")
+        .then((res) => res.json())
+        .then((data) => {
+          firstWod = data.firstWod;
+        });
+    }
+  }, 5000);
 </script>
 
 <div class="mx-auto md:w-10/12">
@@ -29,81 +29,47 @@
   </div>
   <div class="grid md:grid-cols-3 gap-y-4 gap-x-4 mt-2">
     <div>
-      <h2 class="text-2xl text-center">24.1</h2>
-      <div class="">
-        <table class="table-lg text-xl table-zebra w-full table-fixed">
-          <thead class="bg-gray-200">
-            <tr>
-              <th class="text-left pl-1 py-2">Prénom</th>
-              <th class="text-left py-2">Difficulté</th>
-              <th class="text-left py-2">Score</th>
+      <h2 class="text-3xl font-bold text-center">24.1</h2>
+      <AutoScrollTable>
+        {#each firstWod as { wod, firstName, difficulty, score }}
+          {#if wod == "24.1"}
+            <tr class="table w-full" style="table-layout: fixed;">
+              <td class="md:text-2xl pl-1 py-1">{firstName}</td>
+              <td class="md:text-2xl py-1">{difficulty}</td>
+              <td class="md:text-2xl py-1">{score}</td>
             </tr>
-          </thead>
-
-          <tbody>
-            {#each firstWod as { wod, firstName, difficulty, score }}
-              {#if wod == "24.1"}
-                <tr>
-                  <td class=" pl-1 py-1">{firstName}</td>
-                  <td class=" py-1">{difficulty}</td>
-                  <td class=" py-1">{score}</td>
-                </tr>
-              {/if}
-            {/each}
-          </tbody>
-        </table>
-      </div>
+          {/if}
+        {/each}
+      </AutoScrollTable>
     </div>
 
     <div>
-      <h2 class="text-2xl text-center">24.2</h2>
-      <div class="overflow-x-auto">
-      <table class="table-lg text-xl table-zebra w-full">
-        <thead class="bg-gray-200">
-          <tr>
-            <th class="text-left py-2 pl-1">Prénom</th>
-            <th class="text-left py-2 pl-1">Difficulté</th>
-            <th class="text-left py-2">Score</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          {#each firstWod as { wod, firstName, difficulty, score }}
-            {#if wod == "24.2"}
-              <tr>
-                <td class="pl-1 py-1">{firstName}</td>
-                <td class=" pl-1 py-1">{difficulty}</td>
-                <td class=" py-1">{score}</td>
-              </tr>
-            {/if}
-          {/each}
-        </tbody>
-      </table>
-    </div>
+      <h2 class="text-3xl font-bold text-center">24.2</h2>
+      <AutoScrollTable>
+        {#each firstWod as { wod, firstName, difficulty, score }}
+          {#if wod == "24.2"}
+            <tr class="table w-full" style="table-layout: fixed;">
+              <td class="md:text-2xl pl-1 py-1">{firstName}</td>
+              <td class="md:text-2xl pl-1 py-1">{difficulty}</td>
+              <td class="md:text-2xl py-1">{score}</td>
+            </tr>
+          {/if}
+        {/each}
+      </AutoScrollTable>
     </div>
     <div>
-      <h2 class="text-2xl text-center">24.3</h2>
-      <table class="table-lg text-xl table-zebra w-full table-fixed">
-        <thead class="bg-gray-200">
-          <tr>
-            <th class="text-left py-2 pl-1">Prénom</th>
-            <th class="text-left py-2 pl-1">Difficulté</th>
-            <th class="text-left py-2">Score</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          {#each firstWod as { wod, firstName, score, difficulty }}
-            {#if wod == "24.3"}
-              <tr>
-                <td class=" pl-1 py-1">{firstName}</td>
-                <td class=" pl-1 py-1">{difficulty}</td>
-                <td class=" py-1">{score}</td>
-              </tr>
-            {/if}
-          {/each}
-        </tbody>
-      </table>
+      <h2 class="text-3xl font-bold text-center">24.3</h2>
+      <AutoScrollTable>
+        {#each firstWod as { wod, firstName, difficulty, score }}
+          {#if wod == "24.3"}
+            <tr class="table w-full" style="table-layout: fixed;">
+              <td class="md:text-2xl pl-1 py-1">{firstName}</td>
+              <td class="md:text-2xl pl-1 py-1">{difficulty}</td>
+              <td class="md:text-2xl py-1">{score}</td>
+            </tr>
+          {/if}
+        {/each}
+      </AutoScrollTable>
     </div>
   </div>
 </div>
