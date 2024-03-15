@@ -73,6 +73,7 @@
         <thead class="bg-gray-200">
           <tr>
             <th class="text-left py-2 pl-1">Prénom</th>
+            <th class="text-left py-2 pl-1">Difficulté</th>
             <th class="text-left py-2">Score</th>
           </tr>
         </thead>
