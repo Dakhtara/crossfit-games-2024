@@ -35,7 +35,7 @@
           <thead class="bg-gray-200">
             <tr>
               <th class="text-left pl-1 py-2">Prénom</th>
-              <th class="text-left py-2">Difficultés</th>
+              <th class="text-left py-2">Difficulté</th>
               <th class="text-left py-2">Score</th>
             </tr>
           </thead>
