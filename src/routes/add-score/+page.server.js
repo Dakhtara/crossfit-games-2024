@@ -28,10 +28,10 @@ export const actions = {
 
         const res = await prisma.gamesRecord.create({
             data: {
-                firstName: String(firstname),
-                wod: String(wod),
-                score: String(score),
-                difficulty: String(difficulty)
+                firstName: String(firstname).trim(),
+                wod: String(wod).trim(),
+                score: String(score).trim(),
+                difficulty: String(difficulty).trim()
             }
         })
 
