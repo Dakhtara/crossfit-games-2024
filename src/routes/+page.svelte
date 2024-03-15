@@ -1,18 +1,23 @@
 <script>
-  import data from "../lib/data.json";
-
-  let firstWod = data["24.1"];
-  let secondWod = data["24.2"];
+  export let data = [];
+  const { firstWod } = data;
 </script>
 
-<div class="mx-auto w-3/4">
-  <h1 class="text-3xl text-center pt-4">Résultats box Games 2024</h1>
-
-  <div class="grid grid-cols-2 gap-x-4 mt-8">
+<div class="mx-auto md:w-10/12">
+  <div class="flex md:flex-row flex-col items-center gap-x-4 justify-center">
+    <h1 class="text-3xl text-center pt-4">Résultats box Games 2024</h1>
+    <div class="flex items-center gap-x-2 justify-center">
+      <img src="/qrcode.png" width="100" />
+      <a href="/add-score" class=" text-center btn-sm btn btn-primary"
+        >Ajouter mon score</a
+      >
+    </div>
+  </div>
+  <div class="grid md:grid-cols-3 gap-y-4 gap-x-4 mt-8">
     <div>
       <h2 class="text-2xl text-center">24.1</h2>
-      <div class="bg-gray-100 rounded-lg border-gray-200 border">
-        <table class=" w-full table-fixed">
+      <div class="">
+        <table class="table-lg text-xl table-zebra w-full table-fixed">
           <thead class="bg-gray-200">
             <tr>
               <th class="text-left pl-1 py-2">Prénom</th>
@@ -22,12 +27,14 @@
           </thead>
 
           <tbody>
-            {#each firstWod as { name, level, score }}
-              <tr>
-                <td class="pl-1 py-1">{name}</td>
-                <td class="py-1">{level}</td>
-                <td class="py-1">{score}</td>
-              </tr>
+            {#each firstWod as { wod, firstName, difficulty, score }}
+              {#if wod == "24.1"}
+                <tr>
+                  <td class=" pl-1 py-1">{firstName}</td>
+                  <td class=" py-1">{difficulty}</td>
+                  <td class=" py-1">{score}</td>
+                </tr>
+              {/if}
             {/each}
           </tbody>
         </table>
@@ -35,10 +42,34 @@
     </div>
 
     <div>
-        
       <h2 class="text-2xl text-center">24.2</h2>
-      <div class="bg-gray-100 rounded-lg border-gray-200 border">
-        <table class="w-full table-fixed">
+      <div class="overflow-x-auto">
+      <table class="table-lg text-xl table-zebra w-full">
+        <thead class="bg-gray-200">
+          <tr>
+            <th class="text-left py-2 pl-1">Prénom</th>
+            <th class="text-left py-2 pl-1">Difficulté</th>
+            <th class="text-left py-2">Score</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {#each firstWod as { wod, firstName, difficulty, score }}
+            {#if wod == "24.2"}
+              <tr>
+                <td class="pl-1 py-1">{firstName}</td>
+                <td class="text-xl pl-1 py-1">{difficulty}</td>
+                <td class="text-xl py-1">{score}</td>
+              </tr>
+            {/if}
+          {/each}
+        </tbody>
+      </table>
+    </div>
+    </div>
+    <div>
+      <h2 class="text-2xl text-center">24.3</h2>
+      <table class="table-lg text-xl table-zebra w-full table-fixed">
         <thead class="bg-gray-200">
           <tr>
             <th class="text-left py-2 pl-1">Prénom</th>
@@ -47,15 +78,17 @@
         </thead>
 
         <tbody>
-          {#each firstWod as { name, score }}
-            <tr>
-              <td class="pl-1 py-1">{name}</td>
-              <td class="py-1">{score}</td>
-            </tr>
+          {#each firstWod as { wod, firstName, score, difficulty }}
+            {#if wod == "24.3"}
+              <tr>
+                <td class="text-xl pl-1 py-1">{firstName}</td>
+                <td class="text-xl pl-1 py-1">{difficulty}</td>
+                <td class="text-xl py-1">{score}</td>
+              </tr>
+            {/if}
           {/each}
         </tbody>
       </table>
-</div>
     </div>
   </div>
 </div>
