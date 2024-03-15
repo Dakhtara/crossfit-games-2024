@@ -72,8 +72,8 @@
             {#if wod == "24.2"}
               <tr>
                 <td class="pl-1 py-1">{firstName}</td>
-                <td class="text-xl pl-1 py-1">{difficulty}</td>
-                <td class="text-xl py-1">{score}</td>
+                <td class=" pl-1 py-1">{difficulty}</td>
+                <td class=" py-1">{score}</td>
               </tr>
             {/if}
           {/each}
@@ -96,9 +96,9 @@
           {#each firstWod as { wod, firstName, score, difficulty }}
             {#if wod == "24.3"}
               <tr>
-                <td class="text-xl pl-1 py-1">{firstName}</td>
-                <td class="text-xl pl-1 py-1">{difficulty}</td>
-                <td class="text-xl py-1">{score}</td>
+                <td class=" pl-1 py-1">{firstName}</td>
+                <td class=" pl-1 py-1">{difficulty}</td>
+                <td class=" py-1">{score}</td>
               </tr>
             {/if}
           {/each}
